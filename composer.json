@@ -1,0 +1,41 @@
+{
+    "name": "frengky/laravel-jwt-auth",
+    "description": "Laravel JWT auth guard",
+    "keywords": ["laravel", "jwt", "authentication", "auth", "guard"],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/frengky/laravel-jwt-auth",
+    "authors": [
+        {
+            "name": "Frengky",
+            "email": "frengky.lim@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "lcobucci/jwt": "~3.3",
+        "laravel/framework": "6.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8",
+        "mockery/mockery": "^1.3",
+        "orchestra/testbench": "^4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Frengky\\JwtAuth\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Frengky\\JwtAuth\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+              "Frengky\\JwtAuth\\ServiceProvider"
+            ]
+        }
+    }
+}
